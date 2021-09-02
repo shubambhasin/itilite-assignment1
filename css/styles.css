@@ -74,6 +74,7 @@ p {
   box-shadow: 0 3px 5px 1px rgb(150, 150, 150);
   transition: 0.3s all;
   cursor: pointer;
+  background-color: white;
 }
 .flight-details:hover {
   box-shadow: 0 5px 10px 3px rgb(61, 61, 61);
@@ -163,11 +164,11 @@ li {
 }
 .filter-btn {
   margin: 0;
-  padding: 0.1rem 0.3rem;
+  padding: 0.3rem 0.5rem;
   border: 1px solid var(--accent-color);
   background-color: transparent;
   color: rgb(70, 70, 70);
-  font-size: normal;
+  font-size: small;
   transition: 0.1s color;
   cursor: pointer;
 }
@@ -209,4 +210,7 @@ li {
 }
 ul{
   padding-inline-start: 5px;
+}
+.filter{
+  padding: 2rem;
 }
