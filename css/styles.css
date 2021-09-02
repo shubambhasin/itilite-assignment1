@@ -25,11 +25,15 @@ p {
   margin: 0;
   padding: 0;
 }
+.m11{
+    padding: 1rem;
+}
 .container {
   max-width: 1740px;
-  margin: 0 auto;
+  margin: 0;
 }
 .inside-container {
+  padding: 0 1rem;
   margin-top: 60px;
 }
 .brand {
@@ -40,7 +44,7 @@ p {
   background-color: white;
   width: 100%;
   height: 50px;
-  gap: 3rem;
+  gap: 1rem;
   padding: 0 1rem;
   position: fixed;
   justify-content: space-between;
@@ -193,4 +197,16 @@ li {
 
 .f-sm{
     font-size: small;
+}
+.jcsb{
+  justify-content: space-between;
+  color: red;
+}
+.margin-left-auto
+{
+  margin-left: auto;
+
+}
+ul{
+  padding-inline-start: 5px;
 }
