@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap-grid.min.css"
+      integrity="sha512-3AxW5HcDzhL9MJdO2mpDEGEZ6NcCg/pDSa8R2kH5gwEA4r48RxZf0nPITA1NfX1pNA6a/eAayX+yW6QopF4jeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+      integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flex">
+        <nav class="navbar flex aic">
+          <div class="flex aic">
+            <span class="flex">
+              <ul class="flex aic gap-3 no-style">
+                <img class="brand" src="./assets//itilite.webp" />
+                <li class="nav-items">Dashboard</li>
+                <li class="nav-items">Create new trip</li>
+                <li class="nav-items">Service Request</li>
+                <li class="nav-items">Use IL Cash</li>
+              </ul>
+            </span>
+          </div>
+
+          <div class="flex aic gap-1">
+            <span class="nav-items"
+              ><img src="./assets/notifications_black_24dp.svg"
+            /></span>
+            <span class="nav-items"
+              ><img src="./assets/account_circle_black_24dp.svg"
+            /></span>
+            <span class="nav-items f-sm">Shreyash</span>
+          </div>
+        </nav>
+      </div>
+
+      <div class="inside-container row">
+        <div class="filter col-sm-3">
+          <h1 class="orange fs-5">Update iternary</h1>
+          <div class="flex jcsb">
+            <span class="orange mt2-rem">filters</span>
+            <span class="orange">Clear All</span>
+          </div>
+          <div class="flex jcsb">
+            <span>Include outside policy</span>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input orange bg-orange"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+            </div>
+          </div>
+          <div class="mt1-rem">
+            <p>Maximum Stops</p>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic mixed styles example"
+            >
+              <button class="orange filter-btn left-btn">Non stop</button>
+              <button class="orange filter-btn">Upto 1 stop</button>
+              <button class="orange filter-btn right-btn">Upto 2+ stop</button>
+            </div>
+          </div>
+          <div class="mt1-rem">
+            <span>Departure Time</span>
+            <span
+              ><input type="range" class="form-range" id="customRange1"
+            /></span>
+          </div>
+          <div class="mt1-rem">
+            <span>Duration</span>
+            <span
+              ><input type="range" class="form-range" id="customRange1"
+            /></span>
+          </div>
+        </div>
+
+        <div class="flight-section col-sm-9">
+          <div>
+            <div class="flight-section col-sm-9">
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">Departure</div>
+                <div class="col-sm-2">Duration</div>
+                <div class="col-sm-2">Arrival</div>
+                <div class="col-sm-2">Price</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="row flight-details">
+                <div class="col-sm-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <img
+                      src="./assets/air-asia.svg"
+                      class="small-logo"
+                      alt="air-asia-logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">Air asia</li>
+                    <li>I5-454</li>
+                    <li>Business Class</li>
+                    <li class="sm">Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>06:00</li>
+                    <li>BLR</li>
+                    <li>03 Feb</li>
+                    <li>Early Departure</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>
+                      <span
+                        ><input
+                          type="range"
+                          class="form-range"
+                          id="customRange1"
+                      /></span>
+                    </li>
+                    <li class="orange">Hand Bag Only</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>15:34</li>
+                    <li>HYD</li>
+                    <li>02 Feb</li>
+                    <li>Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">6757 INR</li>
+                    <li class="orange">Outside Policy</li>
+                    <li class="blue1 inline" style="color: rgb(0, 174, 255)">
+                      Flight Details
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row flight-details">
+                <div class="col-sm-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <img
+                      src="./assets/air-asia.svg"
+                      class="small-logo"
+                      alt="air-asia-logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">Air asia</li>
+                    <li>I5-454</li>
+                    <li>Business Class</li>
+                    <li class="sm">Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>06:00</li>
+                    <li>BLR</li>
+                    <li>03 Feb</li>
+                    <li>Early Departure</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>
+                      <span
+                        ><input
+                          type="range"
+                          class="form-range"
+                          id="customRange1"
+                      /></span>
+                    </li>
+                    <li class="orange">Hand Bag Only</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>15:34</li>
+                    <li>HYD</li>
+                    <li>02 Feb</li>
+                    <li>Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">6757 INR</li>
+                    <li class="orange">Outside Policy</li>
+                    <li class="blue1 inline" style="color: rgb(0, 174, 255)">
+                      Flight Details
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row flight-details">
+                <div class="col-sm-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <img
+                      src="./assets/air-asia.svg"
+                      class="small-logo"
+                      alt="air-asia-logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">Air asia</li>
+                    <li>I5-454</li>
+                    <li>Business Class</li>
+                    <li class="sm">Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>06:00</li>
+                    <li>BLR</li>
+                    <li>03 Feb</li>
+                    <li>Early Departure</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>
+                      <span
+                        ><input
+                          type="range"
+                          class="form-range"
+                          id="customRange1"
+                      /></span>
+                    </li>
+                    <li class="orange">Hand Bag Only</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>15:34</li>
+                    <li>HYD</li>
+                    <li>02 Feb</li>
+                    <li>Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">6757 INR</li>
+                    <li class="orange">Outside Policy</li>
+                    <li class="blue1 inline" style="color: rgb(0, 174, 255)">
+                      Flight Details
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row flight-details">
+                <div class="col-sm-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <img
+                      src="./assets/air-asia.svg"
+                      class="small-logo"
+                      alt="air-asia-logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">Air asia</li>
+                    <li>I5-454</li>
+                    <li>Business Class</li>
+                    <li class="sm">Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>06:00</li>
+                    <li>BLR</li>
+                    <li>03 Feb</li>
+                    <li>Early Departure</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>
+                      <span>
+                        <input
+                          type="range"
+                          class="form-range"
+                          id="customRange1"
+                      /></span>
+                    </li>
+                    <li class="orange">Hand Bag Only</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>15:34</li>
+                    <li>HYD</li>
+                    <li>02 Feb</li>
+                    <li>Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">6757 INR</li>
+                    <li class="orange">Outside Policy</li>
+                    <li class="blue1 inline" style="color: rgb(0, 174, 255)">
+                      Flight Details
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row flight-details">
+                <div class="col-sm-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <img
+                      src="./assets/air-asia.svg"
+                      class="small-logo"
+                      alt="air-asia-logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">Air asia</li>
+                    <li>I5-454</li>
+                    <li>Business Class</li>
+                    <li class="sm">Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>06:00</li>
+                    <li>BLR</li>
+                    <li>03 Feb</li>
+                    <li>Early Departure</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>
+                      <span
+                        ><input
+                          type="range"
+                          class="form-range"
+                          id="customRange1"
+                      /></span>
+                    </li>
+                    <li class="orange">Hand Bag Only</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>15:34</li>
+                    <li>HYD</li>
+                    <li>02 Feb</li>
+                    <li>Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">6757 INR</li>
+                    <li class="orange">Outside Policy</li>
+                    <li class="blue1 inline" style="color: rgb(0, 174, 255)">
+                      Flight Details
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row flight-details">
+                <div class="col-sm-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <img
+                      src="./assets/air-asia.svg"
+                      class="small-logo"
+                      alt="air-asia-logo"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">Air asia</li>
+                    <li>I5-454</li>
+                    <li>Business Class</li>
+                    <li class="sm">Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>06:00</li>
+                    <li>BLR</li>
+                    <li>03 Feb</li>
+                    <li>Early Departure</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>
+                      <span
+                        ><input
+                          type="range"
+                          class="form-range"
+                          id="customRange1"
+                      /></span>
+                    </li>
+                    <li class="orange">Hand Bag Only</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li>15:34</li>
+                    <li>HYD</li>
+                    <li>02 Feb</li>
+                    <li>Partially Refundable</li>
+                  </ul>
+                </div>
+                <div class="col-sm-2">
+                  <ul class="no-style">
+                    <li class="bold dark">6757 INR</li>
+                    <li class="orange">Outside Policy</li>
+                    <li class="blue1 inline" style="color: rgb(0, 174, 255)">
+                      Flight Details
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
